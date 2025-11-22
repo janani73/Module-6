@@ -1,43 +1,44 @@
-# Exp.No:26  
-## Method Overriding
-
----
-
+# Exp.No:6d 
+## Method Overriding - Object-Oriented Programming in Python – Employee Class Example
 ### AIM  
-To write a Python program to create a Parent class `Bird` and inherit two child classes `Sparrow` and `Ostrich` from the `Bird` class with the same method `flight()`. Create an object for each class and call the methods of the class which will print the name of the bird that is flying.
-
----
-
+To demonstrate the creation and usage of a class in Python, including constructors, methods, and accessing object data members.
 ### ALGORITHM
-
-1. **Begin the program.**
-2. **Define the Bird class**:
-   - Create a method `intro()` to print "There are many types of birds."
-   - Create a method `flight()` to print "Most of the birds can fly but some cannot."
-3. **Define the Sparrow class**, which inherits from `Bird`:
-   - Override the `flight()` method.
-   - Call the `intro()` method from the parent class.
-   - Print "Sparrows can fly."
-4. **Define the Ostrich class**, which inherits from `Bird`:
-   - Override the `flight()` method.
-   - Call the `intro()` method from the parent class.
-   - Print "Ostriches cannot fly."
-5. **Create an object `obj_bird`** of the `Bird` class.
-6. **Create an object `obj_spr`** of the `Sparrow` class.
-7. **Create an object `obj_ost`** of the `Ostrich` class.
-8. **Print the general message** "There are many types of birds."
-9. **Call the `flight()` method** on each object (`obj_bird`, `obj_spr`, `obj_ost`) to display the respective messages.
-10. **Terminate the program.**
-
----
-
+```
+1.Start
+2.Define a class named Employee.
+3.Inside the class, define a constructor __init__ that initializes name, salary, and project.
+4.Create a method show() to display the employee’s name and salary.
+5.Create another method work() to display what project the employee is working on.
+6.Create an object s of the Employee class and pass the values "Jessa", 8000, "NLP".
+7.Call the show() method using the object s to display name and salary.
+8.Call the work() method using the object s to display the project.
+9.End
+```
 ### PROGRAM
 
 ```
+class Employee:
+    # constructor
+    def __init__(self, name, salary, project):
+        self.name = name
+        self.salary = salary
+        self.project = project
+    def show(self):
+        # accessing public data member
+        print("Name: ", self.name, 'Salary:', self.salary)
 
+    # method
+    def work(self):
+        print(self.name, 'is working on', self.project)
+
+s=Employee("Jessa",8000,"NLP")
+s.show()
+s.work()
 ```
 
 ### OUTPUT
+<img width="1206" height="298" alt="Screenshot 2025-11-22 233443" src="https://github.com/user-attachments/assets/c516b6f6-8f05-4c89-8a1a-39992a397692" />
 
 
 ### RESULT
+Thus, the program successfully demonstrates how an employee object can be created, how its data members can be accessed, and how its methods can be used to display information and work details.
