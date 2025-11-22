@@ -2,27 +2,18 @@
 ## Abstraction - Program to demonstrate Polymorphism in Python using Classes and Methods.
 
 ### AIM  
-
 To write a Python program that uses two different classes with the same method names to demonstrate polymorphism, where each object responds differently to the same method call.
 ### ALGORITHM
 ```
-Start
-
-Create a class Ferrari with methods fuel_type() and max_speed()
-
-Create a class BMW with methods fuel_type() and max_speed()
-
-Create objects for Ferrari and BMW
-
-Store both objects inside a tuple named cars
-
-Loop through each object in cars
-
-Call fuel_type() method for each object
-
-Call max_speed() method for each object
-
-Stop
+1.Start
+2.Create a class Ferrari with methods fuel_type() and max_speed()
+3.Create a class BMW with methods fuel_type() and max_speed()
+4.Create objects for Ferrari and BMW
+5.Store both objects inside a tuple named cars
+6.Loop through each object in cars
+7.Call fuel_type() method for each object
+8.Call max_speed() method for each object
+9.Stop
 ```
 
 
