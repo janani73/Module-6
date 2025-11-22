@@ -1,4 +1,4 @@
-# Exp.No:30  
+# Exp.No:6b
 ## COUNTER CLASS - Operator Overloading in Python
 
 ### AIM 
