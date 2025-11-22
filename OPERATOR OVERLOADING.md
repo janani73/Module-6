@@ -1,42 +1,43 @@
-# Exp.No:27  
-## Operator Overloading
-
----
+# Exp.No:6e  
+## Operator Overloading - Object-Oriented Programming in Python – Student Class Example
 
 ### AIM  
-To write a Python program to perform division of two complex numbers using the binary '/' operator overloading. Class name: `Complex`, where the objects `Ob1 = Complex(10, 21)` and `Ob2 = Complex(2, 3)` represent complex numbers.
-
----
-
+To demonstrate how to define a class with multiple methods in Python and how to call these methods using an object of the class.
 ### ALGORITHM
+```
+1.Start
+2.Define a class named student.
+3.Inside the class, define three methods:
+  display() – to print student details.
+  type() – to print a message for invalid roll number.
+  types() – to print updated student details.
+4.Create an object s of the class student.
+5.Call the display() method using s to show student details.
+6.Call the type() method using s to display the invalid roll number message.
+7.Call the types() method using s to show updated student details.
+8.End
+```
 
-1. **Start the Program.**
-2. **Define the Complex class**:
-   - Define the constructor `__init__()` to accept two parameters: `real` and `imag` (representing the real and imaginary parts of the complex number).
-   - Assign these values to `self.real` and `self.imag` respectively.
-3. **Define the `__truediv__()` method** to perform the division of two complex numbers:
-   - Calculate the real part of the result as the division of `self.real` by `other.real`.
-   - Calculate the imaginary part of the result as the division of `self.imag` by `other.imag`.
-   - Return a new Complex object with the calculated real and imaginary parts.
-4. **Define the `__repr__()` method** to represent the complex number as a string.
-   - Return a string formatted to display the real and imaginary parts with one decimal place using `f"{self.real:.1f}, {self.imag:.1f}"`.
-5. **Create two objects of the Complex class**:
-   - `Ob1 = Complex(10, 21)` represents the complex number `10 + 21i`.
-   - `Ob2 = Complex(2, 3)` represents the complex number `2 + 3i`.
-6. **Perform the division operation**: Use the `/` operator to divide `Ob1` by `Ob2`. This will call the `__truediv__()` method.
-7. **Print the result**: Print the result of the division, which will be formatted by the `__repr__()` method.
-8. **End the Program.**
-
----
 
 ### PROGRAM
 
 ```
-
+class student:
+    def display(self):
+        print("Student Details: Jessa 10")
+    def type(self):
+        print("Invalid roll no. Please set correct roll number")
+    def types(self):
+        print("Student Details: Jessa 25")
+s=student()
+s.display()
+s.type()
+s.types()
 ```
 
 ### OUTPUT
+<img width="1206" height="322" alt="image" src="https://github.com/user-attachments/assets/9f8d1712-9d94-4043-85d9-b9f4e1ad1fe7" />
 
 
 ### RESULT
-
+Thus, the program successfully demonstrates how a student object can call multiple methods to display details, handle an invalid roll number scenario, and update or show revised information.
